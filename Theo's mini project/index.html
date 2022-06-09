@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css"/>
+    <title>Theodora database</title>
+</head>
+<body>
+
+    <main>
+        <h2 class="heading">Users Table</h2>
+
+        <!--SEARCH BOX SECTION -->
+     <SECTION class="search-section">
+       <INPUT 
+         type="email"
+         id="search"
+         placeholder="Search by username" 
+         onkeyup="searchUsersByUsername()"
+       />
+     </SECTION>
+
+       <!--USER LIST SECTION -->
+     <Section class="user-list-section">
+         <!-- The li tags are dynamic from the js file -->
+         <ul id="user-list-container"></ul>
+     </Section>
+    </main>
+
+    <!-- javascript -->
+    <script src="./index.js"></script>
+</body>
+</html>
